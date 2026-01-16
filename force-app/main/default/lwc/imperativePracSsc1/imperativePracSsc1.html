@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="PRACTICE IMPERATIVE WITH SSC" icon-name="standard:account" variant="base">
+        <lightning-input 
+          type="text"
+          label="Enter Name"
+          value={name}
+          onchange={handleNameChange}
+        ></lightning-input>
+        <lightning-input 
+          type="text"
+          label="Enter Mobile No"
+          value={mobileNo}
+          onchange={handleMobileNoChange}
+        ></lightning-input>
+        <lightning-input 
+          type="text"
+          label="Enter age"
+          value={age}
+          onchange={handleAgeChange}
+        ></lightning-input>
+        <lightning-button 
+          variant="base"
+          label="Save"           
+          onclick={handleSaveClick} 
+        ></lightning-button>
+    </lightning-card>
+</template>
