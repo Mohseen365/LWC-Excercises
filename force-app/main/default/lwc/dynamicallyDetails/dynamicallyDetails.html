@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Dynamic details" icon-name="standard:contact">
+        <lightning-input type="text" label="Enter your name" onchange={handleName}>
+
+        </lightning-input>
+        <lightning-button 
+          variant="base"
+          label="Result" 
+          onclick={handleAll} 
+        ></lightning-button>
+        <template if:true={hasName}>
+            <p>{message} {name}</p>
+        </template>
+        <template if:false={hasName}>
+            <p>Please enter name</p>
+        </template>
+    </lightning-card>
+</template>
