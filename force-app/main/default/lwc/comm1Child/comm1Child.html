@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Lwc Commu Prac child" icon-name="utility:message" variant="base">
+        <lightning-input 
+          type="text"
+          label="Enter some text"
+          value={message}
+          onchange={handleChange}
+        ></lightning-input>
+        <lightning-button 
+          variant="success"
+          label="send message"          
+          onclick={handleClick} 
+        ></lightning-button>
+    </lightning-card>
+</template>
