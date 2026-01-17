@@ -1,0 +1,12 @@
+<template>
+    <c-comm2-child 
+        onincrement = {handleInc}
+        ondecrement = {handleDec}
+    > 
+
+    </c-comm2-child>
+    <lightning-card icon-name="standard:account" variant="base">
+        <p>{volume}</p>
+        <p>{label}</p>
+    </lightning-card>
+</template>
