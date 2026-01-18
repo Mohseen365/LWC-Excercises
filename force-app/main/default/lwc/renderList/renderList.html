@@ -1,0 +1,10 @@
+<template>
+    <lightning-card icon-name="standard:account" variant="base">
+        <ol class="slds-align_absolute-center">
+            <template for:each={contacts} for:item="con">
+                <li key={con.id}>{con.Name} {con.Title} </li>
+            </template>
+        </ol>
+        
+    </lightning-card>
+</template>
