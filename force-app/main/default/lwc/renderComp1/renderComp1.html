@@ -1,0 +1,15 @@
+<template>
+    <template if:true={isBlue}>
+        <p style="color: blue;"> Blue text</p>
+    </template>
+    <template lwc:if={isGreen}>
+        <p style="color: green;">Green text</p>
+    </template>
+    <template lwc:elseif={isRed}>
+        <p style="color: red;">Red text</p>
+        <p lwc:if={isOrange} style="color: orange;">Orange text</p>
+    </template>
+    <template lwc:else>
+        <p style="color: black;">Black text</p>
+    </template>
+</template>
