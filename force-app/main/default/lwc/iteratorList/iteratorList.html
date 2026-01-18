@@ -1,0 +1,10 @@
+<template>
+    <ul class="slds-align_absolute-center" >
+        <template iterator:myit = {contacts}>
+            <li key={myit.value.Id} lwc:if={myit.first} style="font-weight: bold">{myit.value.Name} {myit.value.Title}</li>
+            <li key={myit.value.Id} lwc:elseif={myit.last} style="font-style: italic">{myit.value.Name} {myit.value.Title} </li>
+            <li key={myit.value.Id} lwc:else>{myit.value.Name} {myit.value.Title}</li>
+        </template>
+
+    </ul>
+</template>
